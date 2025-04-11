@@ -72,6 +72,9 @@ func Run() {
 	// Setup notification signals with cancel
 	setupSignalsNotification(cancelFunc)
 
+	// test
+	// test
+
 	var wg sync.WaitGroup
 
 	launchClickHouse(ctx, &wg)
@@ -83,6 +86,7 @@ func Run() {
 	wg.Wait()
 }
 
+// test
 func launchClickHouse(ctx context.Context, wg *sync.WaitGroup) {
 	initClickHouse(ctx)
 	wg.Add(1)
